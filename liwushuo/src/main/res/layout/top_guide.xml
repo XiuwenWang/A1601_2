@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/tb_Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/bigRed">
+
+    <ImageView
+    android:id="@+id/iv_tb"
+    android:layout_width="wrap_content"
+    android:layout_height="23dp"
+    android:onClick="onClick"
+    android:src="@mipmap/btn_signin" />
+
+    <TextView
+    android:id="@+id/tv_tb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/tv_line_top"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="礼物说"
+    android:textColor="@color/white"
+    android:textSize="25dp" />
+
+    <ImageView
+    android:id="@+id/sv_tb"
+    android:layout_width="wrap_content"
+    android:layout_height="23dp"
+    android:layout_gravity="right"
+    android:layout_marginRight="10dp"
+    android:onClick="onClick"
+    android:src="@mipmap/ic_menu_search" />
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

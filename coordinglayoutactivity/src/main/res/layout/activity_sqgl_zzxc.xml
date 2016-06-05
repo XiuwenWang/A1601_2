@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:golic="http://schemas.android.com/apk/res/com.golic.hsyjt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--<include-->
+        <!--android:layout_weight="1"-->
+        <!--layout="@layout/layout_top_bar" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_marginRight="@dimen/margin_horizontal"
+        android:layout_weight="100" >
+
+        <LinearLayout
+            android:id="@+id/sqgl_zzxc_query_address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!--android:paddingBottom="@dimen/margin_vertical"-->
+            <!--android:paddingTop="@dimen/margin_vertical" -->
+
+
+            <com.golic.hsyjt.ui.widget.SmartInputLine
+                android:id="@+id/sqgl_zzxc_query_address_jlx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                golic:necessary="true"
+                golic:dict_name="DZ_JLX"
+                golic:title="@string/l_jlx"
+                golic:type="dict" />
+                <!-- golic:dict_name="DZ_JLX" -->
+            <com.golic.hsyjt.ui.widget.SmartInputLine
+                android:id="@+id/sqgl_zzxc_query_address_mph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical"
+                golic:len="4"
+                golic:title="@string/l_mph"
+                golic:type="number" />
+            <com.golic.hsyjt.ui.widget.SmartInputLine
+                android:id="@+id/sqgl_zzxc_query_address_dh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical"
+                golic:len="3"
+                golic:title="@string/l_dong"
+                golic:type="number" />
+            <com.golic.hsyjt.ui.widget.SmartInputLine
+                android:id="@+id/sqgl_zzxc_query_address_dyh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical"
+                golic:dict_name="DZ_DYH"
+                golic:title="@string/l_dyh"
+                golic:type="dict" />
+
+            <com.golic.hsyjt.ui.widget.SmartInputLine
+                android:id="@+id/sqgl_zzxc_query_address_lch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical"
+                golic:len="3"
+                golic:title="@string/l_lch"
+                golic:type="number" />
+
+            <com.golic.hsyjt.ui.widget.SmartInputLine
+                android:id="@+id/sqgl_zzxc_query_address_sh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_vertical"
+                golic:len="4"
+                golic:title="@string/l_sh"
+                golic:type="number" />
+        </LinearLayout>
+    </ScrollView>
+
+    <fragment
+        android:name="com.golic.hsyjt.ui.fragment.BottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:tag="bottom" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/rb_guide"
+        style="@style/RadioButton"
+        android:drawableTop="@drawable/home_sel"
+        android:text="指南 " />
+
+    <RadioButton
+        android:id="@+id/rb_hot"
+        style="@style/RadioButton"
+        android:drawableTop="@drawable/select_sel"
+        android:text="热门 " />
+
+    <RadioButton
+        android:id="@+id/rb_category"
+        style="@style/RadioButton"
+        android:drawableTop="@drawable/category_sel"
+        android:text="分类 " />
+
+    <RadioButton
+        android:id="@+id/rb_mine"
+        style="@style/RadioButton"
+        android:drawableTop="@drawable/profile_sel"
+        android:text="我的 " />
+</RadioGroup>
+

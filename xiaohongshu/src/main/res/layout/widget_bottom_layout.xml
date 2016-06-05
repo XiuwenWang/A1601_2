@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/widget_guide_rbtn"
+        style="@style/Widget.RadioButtonStyle"
+        android:text="指南"
+        />
+
+    <RadioButton
+        android:id="@+id/widget_hot_rbtn"
+        style="@style/Widget.RadioButtonStyle"
+        android:text="指南"
+        />
+
+    <RadioButton
+        android:id="@+id/widget_category_rbtn"
+        style="@style/Widget.RadioButtonStyle"
+        android:text="指南"/>
+
+    <RadioButton
+        android:id="@+id/widget_my_rbtn"
+        style="@style/Widget.RadioButtonStyle"
+        android:text="指南"
+        />
+
+</RadioGroup>
